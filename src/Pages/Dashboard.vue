@@ -1,0 +1,32 @@
+<template>
+    <Head title="Dashboard" />
+    <BreezeAuthenticatedLayout :auth="$page.props.auth">
+        <template #header>
+            <h2 class="font-semibold text-xl text-base-content leading-tight">
+                Dashboard
+            </h2>
+        </template>
+
+        <div class="bg-base-200">
+
+                    <div class="bg-base-200 border-b border-neutral">
+                        <div class="grid grid-col-flow gap-5">
+                            <div v-for="datalet in props.datalets">
+                                <Datalet v-if="datalet.datalet.active == 1" :data="datalet.data" :datalet="datalet.datalet" />
+                            </div>
+                        </div>
+
+                    </div>
+
+        </div>
+    </BreezeAuthenticatedLayout>
+</template>
+<script setup>
+import BreezeAuthenticatedLayout from '@/Layouts/Authenticated.vue';
+import { Head, usePage } from '@inertiajs/inertia-vue3';
+import Datalet from '@/Components/Datalet.vue';
+
+const props = defineProps({
+   datalets: [Object, Array, null],
+});
+</script>
