@@ -62,15 +62,13 @@ Iceburg CRM Python is created with:
 - [Orator](https://www.orator-orm.com) ORM
 - [Tailwinds](https://tailwindui.com/) with the DaisyUI plugin
 - [Inertia](https://inertiajs.com/) for routing
-- [heroicons](https://heroicons.com)
+- [Heroicons](https://heroicons.com)
 
 
 
 ## Installation
 ### Quick Install
-```php
-composer create-project iceburgcrm/iceburgcrm iceburgcrm
-
+```
 // Default
 python manage.py seed
 
@@ -121,7 +119,7 @@ cd iceburgcrm
 ```
 
 Edit your database environment variables
-```php
+```
 vim .env
 
 DB_HOST=
@@ -134,10 +132,7 @@ API_KEY=
 
 ```
 
-Open permissions on the storage and
-```php
-sudo chown -R www-data:www-data /path/to/your/project/public
-sudo chown -R www-data:www-data /path/to/your/project/storage
+
 
 ## Default Iceburg CRM
 
