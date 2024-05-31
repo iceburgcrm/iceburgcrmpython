@@ -69,6 +69,9 @@ Iceburg CRM Python is created with:
 ## Installation
 ### Quick Install
 ```
+
+pip install iceburgcrm
+
 // Default
 python manage.py seed
 
