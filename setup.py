@@ -14,11 +14,6 @@ setup(
         'Homepage': 'https://github.com/iceburgcrm/iceburgcrmpython',
         'Demo': 'https://demo.iceburg.ca'
     },
-    classifiers=[
-        'AI CRM :: Django CRM :: Python CRM',
-        'Orator :: CRM :: CRM Generator',
-        'Metadata CRM :: CRM Creator',
-    ],
     python_requires='>=3.8',
     packages=find_packages(),
 )
